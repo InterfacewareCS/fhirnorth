@@ -1,0 +1,27 @@
+{
+    "LocalDependencies": [
+        "ORUR01_251.vmd",
+        "azure/adTokenAPI.lua",
+        "azure/configurations.lua",
+        "data/mappings.lua",
+        "data/resourceTemplates.lua",
+        "fhir/client.lua",
+        "fhir/fhirApi.lua",
+        "fhir/fhirSql.lua",
+        "fhir/help.lua",
+        "fhir/net.lua",
+        "helper.lua"
+    ],
+    "LuaDependencies": [
+        "date.parse",
+        "retry",
+        "store2"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1602007849",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

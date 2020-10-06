@@ -1,0 +1,26 @@
+<channel
+   name="CHN6: COVID ORU to FHIR"
+   guid="2EB36D753D59887A3F769B49382652DB"
+   description="Convert HL7 ORU COVID Lab Report to FHIR Observation, Specimen, and DiagnosticReport resources"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="CHN6_COVID_ORU_to_FHIR-To-cI6lR33b93iRVD"
+      commit_id="dc76654f4c30d861153f06d95b38e7b95287d0dc"
+      commit_comment="Commit">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="5CE1A2AF0E23A20155C8D67FD6EEB277"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path="C:/Program Files/Iguana/ApplicationDir/6.1.2/iNTERFACEWARE-Iguana/autoack.vmd"
+      ack_vmd_path="C:/Program Files/Iguana/ApplicationDir/6.1.2/iNTERFACEWARE-Iguana/autoack.vmd"
+      port="5345"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>
