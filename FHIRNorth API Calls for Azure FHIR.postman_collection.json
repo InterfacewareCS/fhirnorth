@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "7122f2e1-f3b1-4572-9b35-c8358bb5ec44",
+		"name": "FHIRNorth API Calls for Azure FHIR",
+		"description": "FHIRNorth API Calls for Azure FHIR:\n- GET Patient\n- GET Observation\n- GET Specimen\n- GET DiagnosticReport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Azure FHIR - GET Patient by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiJodHRwczovL2ZoaXJub3J0aDkuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOWM1NmRjNC02MGY0LTRmN2YtOTQyZS1hYTI3YzI5OWJlZjAvIiwiaWF0IjoxNjAyMDA3NDQzLCJuYmYiOjE2MDIwMDc0NDMsImV4cCI6MTYwMjAxMTM0MywiYWNyIjoiMSIsImFpbyI6IkUyUmdZT0JaSHZmZWJmTmVzY3pTeHdxVlFVdS9pWjZXZnNRUXR6aW5aL3VpNnV6Q0M3MEEiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiOTFlMTg2ZDEtNTU5Ny00ODFhLWEwODgtNTQ5ZjAyNDQ5MjVjIiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJXYW5nIiwiZ2l2ZW5fbmFtZSI6IlJpY2hhcmQiLCJpcGFkZHIiOiIxNzQuOTQuNjYuNTkiLCJuYW1lIjoiUmljaGFyZCBXYW5nIiwib2lkIjoiYjYxY2YzMmUtODY4MC00ODgxLWEyYjUtODNlNDVjMmIyODRkIiwicmgiOiIwLkFBQUF4RzNGLWZSZ2YwLVVMcW9ud3BtLThOR0c0WkdYVlJwSW9JaFVud0pFa2x3VEFCby4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJKMUNsTnhUakxXdTZNM2d5d1dwQkZLdFp2eEVPbE1ZbDBuSmhlNm9JRjdBIiwidGlkIjoiZjljNTZkYzQtNjBmNC00ZjdmLTk0MmUtYWEyN2MyOTliZWYwIiwidW5pcXVlX25hbWUiOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1cG4iOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1dGkiOiJNbEhRalFWQ0lrU2JHbXgtX1o1R0FRIiwidmVyIjoiMS4wIn0.hNU7znHMWGvftx4f0yx65C9WMPelBdrbF3lbWNHu_Pj5MFWpBloNCe9MQ5rS-14sPb992XZQ6WNIg0m3dNMg0GXQMzvKDlSj1Ox0FXeObo65pBvPhkkwQgrVHR8C9940NzWQ3ijMcH-cewtG0m2m2x_ETAxX3nnwzIWS_9WCZrKL_WEact5qqS-GejR19RJY4ZfGIz7tL6tbVmEjTPUSFjLfRqkfUoglp3YNrE-rRLTnItWXk3cOlqzcJdUG3mp4x2G62PHr5hsElcg9UAr97pLUCRnap_cIs0Yv_BcONJ8wY5BgG19aaUf7e_5a5gEoZwHsOXLijQ63N8IKyOpXOw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fhirnorth9.azurehealthcareapis.com/Patient?_id=69a414de-83fc-4ebe-889f-761b3bebae26",
+					"protocol": "https",
+					"host": [
+						"fhirnorth9",
+						"azurehealthcareapis",
+						"com"
+					],
+					"path": [
+						"Patient"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "69a414de-83fc-4ebe-889f-761b3bebae26"
+						}
+					]
+				},
+				"description": "Azure FHIR - GET Patient by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Azure FHIR - GET Observation by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiJodHRwczovL2ZoaXJub3J0aDkuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOWM1NmRjNC02MGY0LTRmN2YtOTQyZS1hYTI3YzI5OWJlZjAvIiwiaWF0IjoxNjAyMDA3NDQzLCJuYmYiOjE2MDIwMDc0NDMsImV4cCI6MTYwMjAxMTM0MywiYWNyIjoiMSIsImFpbyI6IkUyUmdZT0JaSHZmZWJmTmVzY3pTeHdxVlFVdS9pWjZXZnNRUXR6aW5aL3VpNnV6Q0M3MEEiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiOTFlMTg2ZDEtNTU5Ny00ODFhLWEwODgtNTQ5ZjAyNDQ5MjVjIiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJXYW5nIiwiZ2l2ZW5fbmFtZSI6IlJpY2hhcmQiLCJpcGFkZHIiOiIxNzQuOTQuNjYuNTkiLCJuYW1lIjoiUmljaGFyZCBXYW5nIiwib2lkIjoiYjYxY2YzMmUtODY4MC00ODgxLWEyYjUtODNlNDVjMmIyODRkIiwicmgiOiIwLkFBQUF4RzNGLWZSZ2YwLVVMcW9ud3BtLThOR0c0WkdYVlJwSW9JaFVud0pFa2x3VEFCby4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJKMUNsTnhUakxXdTZNM2d5d1dwQkZLdFp2eEVPbE1ZbDBuSmhlNm9JRjdBIiwidGlkIjoiZjljNTZkYzQtNjBmNC00ZjdmLTk0MmUtYWEyN2MyOTliZWYwIiwidW5pcXVlX25hbWUiOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1cG4iOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1dGkiOiJNbEhRalFWQ0lrU2JHbXgtX1o1R0FRIiwidmVyIjoiMS4wIn0.hNU7znHMWGvftx4f0yx65C9WMPelBdrbF3lbWNHu_Pj5MFWpBloNCe9MQ5rS-14sPb992XZQ6WNIg0m3dNMg0GXQMzvKDlSj1Ox0FXeObo65pBvPhkkwQgrVHR8C9940NzWQ3ijMcH-cewtG0m2m2x_ETAxX3nnwzIWS_9WCZrKL_WEact5qqS-GejR19RJY4ZfGIz7tL6tbVmEjTPUSFjLfRqkfUoglp3YNrE-rRLTnItWXk3cOlqzcJdUG3mp4x2G62PHr5hsElcg9UAr97pLUCRnap_cIs0Yv_BcONJ8wY5BgG19aaUf7e_5a5gEoZwHsOXLijQ63N8IKyOpXOw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fhirnorth9.azurehealthcareapis.com/Observation?_id=f5746365-bf67-4c28-a2b8-4880871c4ec5",
+					"protocol": "https",
+					"host": [
+						"fhirnorth9",
+						"azurehealthcareapis",
+						"com"
+					],
+					"path": [
+						"Observation"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "f5746365-bf67-4c28-a2b8-4880871c4ec5"
+						}
+					]
+				},
+				"description": "Azure FHIR - GET Patient by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Azure FHIR - GET Specimen by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiJodHRwczovL2ZoaXJub3J0aDkuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOWM1NmRjNC02MGY0LTRmN2YtOTQyZS1hYTI3YzI5OWJlZjAvIiwiaWF0IjoxNjAyMDA3NDQzLCJuYmYiOjE2MDIwMDc0NDMsImV4cCI6MTYwMjAxMTM0MywiYWNyIjoiMSIsImFpbyI6IkUyUmdZT0JaSHZmZWJmTmVzY3pTeHdxVlFVdS9pWjZXZnNRUXR6aW5aL3VpNnV6Q0M3MEEiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiOTFlMTg2ZDEtNTU5Ny00ODFhLWEwODgtNTQ5ZjAyNDQ5MjVjIiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJXYW5nIiwiZ2l2ZW5fbmFtZSI6IlJpY2hhcmQiLCJpcGFkZHIiOiIxNzQuOTQuNjYuNTkiLCJuYW1lIjoiUmljaGFyZCBXYW5nIiwib2lkIjoiYjYxY2YzMmUtODY4MC00ODgxLWEyYjUtODNlNDVjMmIyODRkIiwicmgiOiIwLkFBQUF4RzNGLWZSZ2YwLVVMcW9ud3BtLThOR0c0WkdYVlJwSW9JaFVud0pFa2x3VEFCby4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJKMUNsTnhUakxXdTZNM2d5d1dwQkZLdFp2eEVPbE1ZbDBuSmhlNm9JRjdBIiwidGlkIjoiZjljNTZkYzQtNjBmNC00ZjdmLTk0MmUtYWEyN2MyOTliZWYwIiwidW5pcXVlX25hbWUiOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1cG4iOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1dGkiOiJNbEhRalFWQ0lrU2JHbXgtX1o1R0FRIiwidmVyIjoiMS4wIn0.hNU7znHMWGvftx4f0yx65C9WMPelBdrbF3lbWNHu_Pj5MFWpBloNCe9MQ5rS-14sPb992XZQ6WNIg0m3dNMg0GXQMzvKDlSj1Ox0FXeObo65pBvPhkkwQgrVHR8C9940NzWQ3ijMcH-cewtG0m2m2x_ETAxX3nnwzIWS_9WCZrKL_WEact5qqS-GejR19RJY4ZfGIz7tL6tbVmEjTPUSFjLfRqkfUoglp3YNrE-rRLTnItWXk3cOlqzcJdUG3mp4x2G62PHr5hsElcg9UAr97pLUCRnap_cIs0Yv_BcONJ8wY5BgG19aaUf7e_5a5gEoZwHsOXLijQ63N8IKyOpXOw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fhirnorth9.azurehealthcareapis.com/Specimen?_id=e549dd14-2c4e-43b9-81e8-b744c991e429",
+					"protocol": "https",
+					"host": [
+						"fhirnorth9",
+						"azurehealthcareapis",
+						"com"
+					],
+					"path": [
+						"Specimen"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "e549dd14-2c4e-43b9-81e8-b744c991e429"
+						}
+					]
+				},
+				"description": "Azure FHIR - GET Patient by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Azure FHIR - GET DiagnosticReport by Specimen ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCIsImtpZCI6ImtnMkxZczJUMENUaklmajRydDZKSXluZW4zOCJ9.eyJhdWQiOiJodHRwczovL2ZoaXJub3J0aDkuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOWM1NmRjNC02MGY0LTRmN2YtOTQyZS1hYTI3YzI5OWJlZjAvIiwiaWF0IjoxNjAyMDA3NDQzLCJuYmYiOjE2MDIwMDc0NDMsImV4cCI6MTYwMjAxMTM0MywiYWNyIjoiMSIsImFpbyI6IkUyUmdZT0JaSHZmZWJmTmVzY3pTeHdxVlFVdS9pWjZXZnNRUXR6aW5aL3VpNnV6Q0M3MEEiLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiOTFlMTg2ZDEtNTU5Ny00ODFhLWEwODgtNTQ5ZjAyNDQ5MjVjIiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJXYW5nIiwiZ2l2ZW5fbmFtZSI6IlJpY2hhcmQiLCJpcGFkZHIiOiIxNzQuOTQuNjYuNTkiLCJuYW1lIjoiUmljaGFyZCBXYW5nIiwib2lkIjoiYjYxY2YzMmUtODY4MC00ODgxLWEyYjUtODNlNDVjMmIyODRkIiwicmgiOiIwLkFBQUF4RzNGLWZSZ2YwLVVMcW9ud3BtLThOR0c0WkdYVlJwSW9JaFVud0pFa2x3VEFCby4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJKMUNsTnhUakxXdTZNM2d5d1dwQkZLdFp2eEVPbE1ZbDBuSmhlNm9JRjdBIiwidGlkIjoiZjljNTZkYzQtNjBmNC00ZjdmLTk0MmUtYWEyN2MyOTliZWYwIiwidW5pcXVlX25hbWUiOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1cG4iOiJyaWNoYXJkLndhbmdAaW50ZXJmYWNld2FyZS5jb20iLCJ1dGkiOiJNbEhRalFWQ0lrU2JHbXgtX1o1R0FRIiwidmVyIjoiMS4wIn0.hNU7znHMWGvftx4f0yx65C9WMPelBdrbF3lbWNHu_Pj5MFWpBloNCe9MQ5rS-14sPb992XZQ6WNIg0m3dNMg0GXQMzvKDlSj1Ox0FXeObo65pBvPhkkwQgrVHR8C9940NzWQ3ijMcH-cewtG0m2m2x_ETAxX3nnwzIWS_9WCZrKL_WEact5qqS-GejR19RJY4ZfGIz7tL6tbVmEjTPUSFjLfRqkfUoglp3YNrE-rRLTnItWXk3cOlqzcJdUG3mp4x2G62PHr5hsElcg9UAr97pLUCRnap_cIs0Yv_BcONJ8wY5BgG19aaUf7e_5a5gEoZwHsOXLijQ63N8IKyOpXOw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fhirnorth9.azurehealthcareapis.com/DiagnosticReport?specimen=e549dd14-2c4e-43b9-81e8-b744c991e429",
+					"protocol": "https",
+					"host": [
+						"fhirnorth9",
+						"azurehealthcareapis",
+						"com"
+					],
+					"path": [
+						"DiagnosticReport"
+					],
+					"query": [
+						{
+							"key": "specimen",
+							"value": "e549dd14-2c4e-43b9-81e8-b744c991e429"
+						}
+					]
+				},
+				"description": "Azure FHIR - GET Patient by ID"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
